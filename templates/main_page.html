@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		{% block title %}Project Stage : 5{% endblock title %}
+	</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h1>Stage 5 Project</h1> 
+	{% block content %}
+	{% endblock content %}
+	<hr>
+	<footer>
+		{% block footer %}<div>
+			stage 4
+		</div>
+		<div>
+			<form method="get" action="/collection">
+				<label>
+					Gurjot's Comments:
+					<input type="submit" value="comments"  id = "submit">
+				</label>
+			</form>
+		</div>
+		<div>
+			October 2015
+		</div>{% endblock footer %}
+	</footer>
+</body>
+</html>

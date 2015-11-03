@@ -1,0 +1,26 @@
+{% extends "main_page.html" %}
+{% block content %}
+	<h1>
+		{{name}}'s page
+	</h1>
+	<hr>
+{% for key, value in content.items() %}
+	<div>
+		<h2>{{key}}</h2>
+		<p>{{value}}</p>
+	</div>{% endfor %}{% endblock content %}
+{% block footer %}
+	<div>
+		about IPND stage 4
+	</div>
+	<div>
+		<form method="get" action="/collection">
+			<label>
+				{{name}} made the comment above. To see other comments, click comments:
+				<input type="submit" value="Comments"  id = "submit">
+			</label>
+		</form>
+	</div>
+	<div>
+		{{date}}
+	</div>{% endblock footer %}

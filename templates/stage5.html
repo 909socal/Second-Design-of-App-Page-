@@ -1,0 +1,153 @@
+{% extends "main_page.html" %}
+{% block content %}
+
+		<h1> </h1>
+		 <div class="lesson">
+			<h2 id="lesson-1">Stage 5 Topic : Javascript</h2>
+	 <div class="concept" id="lesson-1-1">
+			<div class="concept-title">
+				JavaScript
+			</div>
+			<div class="concept-description">
+				Links provided below
+				<p>JavaScript is the topic I have chosen to explore more deeply. The reason I have chosen javascript is
+				because it allows the the developer to easily maniuplate and inspect our webpage within the browser.
+				We learned HTML, I felt it would be one of the better topics to explore going hand in hand.
+				</p>
+				<p>
+				On Code academy I started two different projects I jumped onto. "Code your own Adventure" and "Contact Book" projects will be displayed below.
+				</p>
+				<p>
+				First project you created a user friendly adventure game. I found this to be very confusing at first due to not learning case and switch in python. 
+				I did like the idea of prompt being a pop up, which we see usually within chrome and web browsers asking the questions. My project was based on what tire
+				brand and if it was noisy or had grip. 
+				</p>
+				<p>
+				Second project is creating a phonebook using array, dictionaires, and objects. 
+				Setting for loops came allot easier due to you creating the incrementing within the loop. I also found  similar things such as nesting and using the dot to
+				get to a specific variable within the list or object. Dictionaires were used similarly we used them in python within objects. I created a 
+				phonebook which was one of the small projects I jumped onto. I will be displaying the code below. 
+				</p>
+				</div>
+			</div>
+	 <div class="concept" id="lesson-1-2">
+			<div class="concept-title">
+			 Project 1: Code your own Adventure
+			</div>
+			<div class="concept-description">
+			<p>
+				var user=prompt("What country make tires are u running?").toUpperCase();<br>
+				switch(user)<br>
+				{<br>
+				<div class="tab">    
+					case 'China':<br>
+				<div class="tab-2">        
+								var grip = prompt("Do they grip ? yes or no").toUpperCase();<br>
+				        var noise= prompt("are they noisy? yes or no").toUpperCase(); <br>
+				        if( grip==="YES" && noise==="YES")<br>
+				        {
+				            console.log("Great set of Tires");<br>
+				        }<br>
+				        else <br>
+				        {<br>
+				            console.log("You should consider different tires");<br>
+				        }<br>
+				        break;<br></div>
+				  <div class="tab"> 
+				   case  'Mexican':<br></div>
+				  <div class="tab-2">     
+				  			var grip =prompt("Do they grip ? yes or no").toUpperCase();<br>
+				        var nois =prompt("are they noisy? yes or no").toUpperCase(); <br>
+				        if( grip=== "YES"|| noise==="Yes")<br>
+				        {<br>
+				            console.log("Great set of Tires");<br>
+				        }<br>
+				        else <br>
+				        {<br>
+				            console.log("You should consider different tires");<br>
+				        }<br>
+				        
+				        break;<br></div>
+				 <div class="tab">  
+				  case 'Taiwanese':<br></div>
+				  <div class="tab-2">
+				        var grip = prompt("Do they grip ? yes or no").toUpperCase();<br>
+				        var noise= prompt("are they noisy? yes or no").toUpperCase(); <br>
+				        if( grip==="YES" &lt;&lt; noise==="YES")<br>
+				        {<br>
+				            console.log("Great set of Tires");<br>
+				        }<br>
+				        else <br>
+				        {<br>
+				            console.log("You should consider different tires");<br>
+				        }<br>
+				         break;<br></div>
+				    
+				  <div class="tab">  
+				  default:<br></div>
+				  <div class="tab-2"></div>
+		 <div class="concept-title">
+		 	Project 2: Contact Book
+			</div>
+			<div class="concept-description">
+			<p> 
+			var bob = {<br>
+			<div class="tab">
+			    firstName: "Bob",<br>
+			    lastName: "Jones",<br>
+			    phoneNumber: "(650) 777-7777",<br></div>
+			};<br>
+
+			var mary = {<br>
+			<div class="tab">
+			    firstName: "Mary",<br>
+			    lastName: "Johnson",<br>
+			    phoneNumber: "(650) 888-8888",<br>
+			    email: "mary.johnson@example.com"<br></div>
+			};<br>
+
+			var contacts = [bob, mary];<br>
+
+			function printPerson(person) {<br>
+			<div class="tab">
+			    console.log(person.firstName + " " + person.lastName);<br></div>
+			}
+
+			function list() {<br>
+			<div class="tab">
+				var contactsLength = contacts.length;<br>
+				for (var i = 0; i &lt; contactsLength; i++) {<br>
+				<div class="tab2">
+					printPerson(contacts[i]);<br></div>
+				}<br></div>
+			}<br>
+
+			/*Create a search function<br>
+			then call it passing "Jones"*/<br>
+			function search (lastName) {<br>
+			var contactsLength = contacts.length;<br>
+			for (var i = 0; i &lt; contactsLength; i++ ) {<br>
+			if(contacts[i].lastName === lastName) {<br>
+			printPerson(contacts[i]);<br>
+			}<br>
+			}<br>
+			};<br>
+			search("Jones");<br>
+			</p>
+		</div>
+		</div>
+	<div class="concept" id="lesson-1-4">
+		<div class="concept-title">
+				Links:
+			</div>
+			<div class="concept-description">
+				<p>
+					Both projects came from two different links from code academy. <br>
+					Project 1: https://www.codecademy.com/courses/javascript-beginner-en-ZA2rb/0/6?curriculum_id=506324b3a7dffd00020bf661<br>
+					Project 2: https://www.codecademy.com/courses/building-an-address-book/0/5?curriculum_id=506324b3a7dffd00020bf661<br>
+					Website: https://www.codecademy.com/learn/javascript<br>
+			</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}

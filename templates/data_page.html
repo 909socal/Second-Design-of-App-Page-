@@ -1,0 +1,34 @@
+{% extends "main_page.html" %}
+{% block content %}
+<header>	
+	<div class="center" id="center" >  
+	  <h1>Gurjot's Notes and Comments </h1>
+	  <a href="/notes"> <h3 style = "color:black">View Notes : Lesson:1-11 <h3></a>  
+	  <a href="/stage5"> <h3 style = "color:black">Stage 5: Notes and Project<h3></a> 
+	</div>
+
+	<br>
+	<p>
+		<h4>To add a Comment or information, please fill out your name and comment below:
+		</h4>
+	</p>
+	{% if blank == True %}<div class="error"><p>Sorry, blanks don't count in the "name" field!</p></div>{% endif %}
+</header>
+<form method="post" action="/userpage">
+	<label>
+		Name:
+		<input type="text" name="name" value="no_name">
+	</label>
+	<br>
+
+	{% for t in topics %}<label>
+		{{t}}:<br>
+		<textarea name="content" rows="5" cols="125"></textarea>
+	</label>
+	<br>
+	{% endfor %}
+	<br>
+	<div class="center">
+		<input type="submit"  id = "submit">
+	</div>
+</form>{% endblock content %}

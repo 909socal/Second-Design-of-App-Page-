@@ -1,0 +1,664 @@
+{% extends "main_page.html" %}
+{% block content %}
+<body>
+    <div class="TOC">
+    <h1 style = "color:red">Table of Contents</h1>
+  <ol>
+      <li class="TOC-lesson"><a href="#lesson-1">Lesson 1: The Basics of the Web and HTML</a>
+        <ul>
+          <li><a href="#lesson-1-1">How the Web Works</a></li>
+          <li><a href="#lesson-1-2">HTML</a></li>
+          <li><a href="#lesson-1-3"> Tags, Elements ans AttributesL</a></li>
+          <li><a href="#lesson-1-4">Incline vs Block</a></li>
+          <li><a href="#lesson-1-5">Stupid Computers</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-2">Lesson 2: Creating a Structured Document with HTML</a>
+        <ul>
+          <li><a href="#lesson-2-1">Tree Structure</a></li>
+          <li><a href="#lesson-2-2">Boxes Everywhere</a></li>
+          <li><a href="#lesson-2-3">CSS</a></li>
+          <li><a href="#lesson-2-4">Class</a></li>
+          <li><a href="#lesson-2-5">Developer Tools</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-3">Lesson 3: Adding CSS Style to HTML Structure</a>
+        <ul>
+          <li><a href="#lesson-3-1">Id and classes</a></li>
+          <li><a href="#lesson-3-2">CSS</a></li>
+          <li><a href="#lesson-3-3">Boxing</a></li>
+        </ul>
+      </li>  
+      <li class="TOC-lesson"><a href="#lesson-4">Lesson 4: Introduction to "Serious" Programming</a>
+        <ul>
+          <li><a href="#lesson-4-1">Computer</a></li>
+          <li><a href="#lesson-4-2">Computer Program and Language</a></li>
+          <li><a href="#lesson-4-3">Grammar and expressions</a></li>
+        </ul>
+      </li>
+     <li class="TOC-lesson"><a href="#lesson-5">Lesson 5: Variables and Strings</a>
+        <ul>
+          <li><a href="#lesson-5-1">Python: Vairables and Integers</a></li>
+          <li><a href="#lesson-5-2">Indexing, and Sub Sequence</a></li>
+          <li><a href="#lesson-5-3">Find Property</a></li>
+        </ul>
+      </li>
+     <li class="TOC-lesson"><a href="#lesson-6">Lesson 6: Input -> Function -> Output</a>
+        <ul>
+          <li><a href="#lesson-6-1">What is a function</a></li>
+          <li><a href="#lesson-6-2">A Function</a></li>
+        </ul>
+      </li>
+     <li class="TOC-lesson"><a href="#lesson-7">Lesson 7: Control Flow & Loops: If and While</a>
+        <ul>
+          <li><a href="#lesson-7-1">Control Flow: IF </a></li>
+          <li><a href="#lesson-7-2">OR</a></li>
+          <li><a href="#lesson-7-2">While Loops</a></li>
+        </ul>
+      </li>
+     <li class="TOC-lesson"><a href="#lesson-8">Lesson 8: Debugging</a>
+        <ul>
+          <li><a href="#lesson-8-1">Debugging</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-9">Lesson 9: Structured Data: Lists & For Loops</a>
+        <ul>
+          <li><a href="#lesson-9-1">Lists</a></li>
+          <li><a href="#lesson-9-2">List Operations</a></li>
+          <li><a href="#lesson-9-3">Loops for lists</a></li>
+          <li><a href="#lesson-9-4"> For Loops</a></li>
+        </ul>
+      </li>
+     <li class="TOC-lesson"><a href="#lesson-10">Lesson 10: How to Solve Problems</a>
+        <ul>
+          <li><a href="#lesson-10-1">Lists: Define nextDay</a></li>
+          <li><a href="#lesson-10-2">Lists: Def daysBetweenDates (Helper Procedure)</a></li>
+          <li><a href="#lesson-10-3">Lists</a></li>
+          <li><a href="#lesson-10-4">Lists: Leap Year plus Finished</a></li>
+        </ul>
+      </li>
+     <li class="TOC-lesson"><a href="#lesson-11">Lesson 11: Python generating</a>
+        <ul>
+          <li><a href="#lesson-11-1">Python Code into HTML</a></li>
+        </ul>          
+      </li>
+    </ol>
+  </div>
+    <h1>Important Concepts/Notes </h1>
+     <div class="lesson">
+      <h2 id="lesson-1">Lesson 1:The Basics of the Web and HTML</h2>
+
+    <div class="concept" id="lesson-1-1">
+      <div class="concept-title">
+        How the Web Works
+      </div>
+      <div class="concept-description">
+        <p>The web is a collection of HTML documents.
+        The documents contain hyperlinks, videos, images,
+        and anything that exists on the web. The web works as a action
+        and reaction system. You act on your computer and 
+        it will process through the web through http and you will get
+         a reaction back from the server giving you your data. 
+       </p>
+        </div>
+      </div>
+   <div class="concept" id="lesson-1-2">
+      <div class="concept-title">
+        HTML
+      </div>
+      <div class="concept-description">
+      <p>HTML stands for Hypertext Markup Language. HTMl is the heart of the web.
+        The web is built upon text content which is the content you see. Mark up is the what the text looks like. In HTML you have references to images and videos
+        and links to other pages. 
+      </p>
+      </div>
+    </div>
+  <div class="concept" id="lesson-1-3">
+     <div class="concept-title">
+        Tags, Elements ans Attributes
+      </div>
+      <div class="concept-description">
+      <p> Elements contain tags<br>
+      These tags can be used to bold,italicize or even break up text.<br>
+      We can use tags to create white-space between text by breaking it apart such as using br and p
+       </p>
+    </div>
+    </div>
+  <div class="concept" id="lesson-1-4">
+    <div class="concept-title">
+        Incline vs Block
+      </div>
+      <div class="concept-description">
+        <p>Incline elements can be used as a endpoint or just the end of the line. <br>
+        Block Elements create invisible boxes that allow content to stay outside of the box such as p and div.
+      </p>
+      </div>
+    </div>
+  <div class="concept" id="lesson-1-5">
+    <div class="concept-title">
+        Stupid Computers
+      </div>
+      <div class="concept-description">
+        <p>Computers are stupid because they literally take every instruction, 
+      without any liable mistakes.
+      </p>
+      </div>
+    </div>
+  </div>
+<div class="lesson">
+      <h2 id="lesson-2">Lesson 2:Creating a Structured Document with HTML</h2>
+
+  <div class="concept" id="lesson-2-1">
+      <div class="concept-title">
+        Tree Structure
+      </div>
+      <div class="concept-description">
+         <p>The browser builds a a tree like structure of the page. All the tags have a opening and closing tag. Within the tags
+      we wil have other tags creating a tree.
+      </p>
+      </div>
+    </div>
+  <div class="concept" id="lesson-2-2">
+      <div class="concept-title">
+       Boxes Everywhere
+      </div>
+      <div class="concept-description">
+       <p>When you first see a webpage, start to create boxes around everything. You can divide up the 
+      page by the boxes to better see how the page is structured. Boxes can be broken down by the div tag
+      </p>
+      </div>
+    </div>
+  <div class="concept" id="lesson-2-3">
+      <div class="concept-title">
+        CSS
+      </div>
+      <div class="concept-description">
+      <p>Style/layouy of the page 
+      </p>
+      </div>
+    </div>
+  <div class="concept" id="lesson-2-4">
+      <div class="concept-title">
+       Class
+      </div>
+      <div class="concept-description">
+    <p>Classes are like labels. They tell you where things should be placed or where they go. Its helpful to create discriptive class names. div class = "name"
+      </p>
+      </div>
+    </div>
+   <div class="concept" id="lesson-2-5">
+      <div class="concept-title">
+        Developer Tools
+      </div>
+      <div class="concept-description">
+      <p>Devloper Tools are tool in which allows you to chnage the HtML page and CSS page within the browser.Changes made 
+      are not permanent.
+      </p> 
+      </div>
+    </div>
+</div>
+ <div class="lesson">
+      <h2 id="lesson-3">Lesson 3: Adding CSS Style and HTML Structure</h2>
+
+  <div class="concept" id="lesson-3-1">
+      <div class="concept-title">
+        Id and classes
+      </div>
+      <div class="concept-description">
+        <p>Id and classes help you avoid repetition. Id's help identify an element from the entire webpage. Only one ID is given to one div. Allowing the div to be locateable. Id = #. Classes allow you to avoid repition by allowing their to be many classes under the same name. This allows you to save repetition. 
+        </p> 
+         </div>
+       </div>
+  <div class="concept" id="lesson-3-2">
+      <div class="concept-title">
+       CSS
+      </div>
+      <div class="concept-description">
+      <p>Cascading Style Sheet. CSS is the code that allows you to style the html page. This style sheet can be placed within a different folder which is recommended for bigger projects. 
+      </p>
+       </div>
+       </div>
+   <div class="concept" id="lesson-3-3">
+      <div class="concept-title">
+       Boxing
+      </div>
+      <div class="concept-description">
+      <p>Can see the box outlines by developer tools in order to see size and shaping. Allows you to chnage padding, margin and border. 
+        css: box-sizing:border-box (allows the border and padding to normalize as you change the size of the box and the page. Does not chnage margin) css: display:flex (allows two elements to be next to each other rather than on top of one another)
+      </p> 
+    </div>
+    </div>
+    </div>
+
+  <h1>Important Concepts: Telling Computers What to do </h1>
+  <div class="lesson">
+      <h2 id="lesson-4">Lesson 4: Introduction to "Serious" Programming</h2>
+
+  <div class="concept" id="lesson-4-1">
+      <div class="concept-title">
+        Computer
+      </div>
+      <div class="concept-description">
+         <p>A computer is able to preform any task you would like, as long as their is an algorithm written for it. It needs a set of instructions to preform any task of preference, but without the instructions it is just an eletric box.
+          </p>
+      </div>
+    </div>
+  <div class="concept" id="lesson-4-2">
+      <div class="concept-title">
+       Computer Program and Language
+      </div>
+      <div class="concept-description">
+       <p>In order to do a task a computer needs to follow a certain amount of sets to preform the taxk. These steps are written in a programing language. Their are many types of programming languages for different tasks such as c++, python, html and so on. 
+      </p>
+      </div>
+    </div>
+  <div class="concept" id="lesson-4-3">
+      <div class="concept-title">
+      Grammar and expressions
+      </div>
+      <div class="concept-description">
+      <p>Grammar is very key to any language you learn. Programming languages use grammar as well. Without proper grammar in programing languages you will end up with errors or just useless text.
+      </p>
+      </div>
+    </div>
+  </div>
+  <div class="lesson">
+      <h2 id="lesson-5">Lesson 5: Variables and Strings</h2>
+
+  <div class="concept" id="lesson-5-1">
+      <div class="concept-title">
+        Python: Vairables and integers
+      </div>
+      <div class="concept-description">
+         <p>Can assign intergers and strings to names without using var. Simply can type in "name= "Gurjot" or "day=15"
+          </p>
+      </div>
+    </div>
+  <div class="concept" id="lesson-5-2">
+      <div class="concept-title">
+      Indexing, and sub Sequence
+      </div>
+      <div class="concept-description">
+       <p> name= Gurjot <br>
+        Indexing : print name[3] === j <br>
+        Sub sequence: print name[2:5] === rjo ( stops at -1 ) <br>
+        EXAMPLES AND TRICKS ON NOTES
+      </p>
+      </div>
+    </div>
+  <div class="concept" id="lesson-5-3">
+      <div class="concept-title">
+      Find property
+      </div>
+      <div class="concept-description">
+      <p> The find property gives you back a number where that string is found on. <br>
+         genie = "Genie is in a bottle"<br>
+         print genie.find("i") === 3 ( Will find the first "i")<br>
+          EXAMPLES AND TRICKS ON NOTES (Many tricks for finding 2nd "i" and changind all the "i"'s to "o")
+      </p>
+      </div>
+    </div>
+  </div>
+  <div class="lesson">
+      <h2 id="lesson-6">Lesson 6: Input -> Function -> Output</h2>
+
+  <div class="concept" id="lesson-6-1">
+      <div class="concept-title">
+        What is a function
+      </div>
+      <div class="concept-description">
+         <p>A function takes in a input that is put through a task and then returned as an output. <br>
+          A function might input a number and add it by two and give the total as an output. <br>
+          They help avoid repitition. FUNCTION IS POINTLES IF NOTHING IS RETURNED
+          </p>
+      </div>
+    </div>
+  <div class="concept" id="lesson-6-2">
+      <div class="concept-title">
+      A Function
+      </div>
+      <div class="concept-description">
+       <p> def square (x): <br>
+          <div class="tab"> answer= x *x <br>
+          return answer <br></div>
+          <br>
+       </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson">
+      <h2 id="lesson-7">Lesson 7: Control Flow & Loops: If and While</h2>
+  <div class="concept" id="lesson-7-1">
+      <div class="concept-title">
+      Control Flow: if
+      </div>
+      <div class="concept-description">
+       <p> <b>if</b> &lt;Test Expression&gt;: <br>
+          &lt;Block&gt;<br
+          ><b>else:</b> <br>
+         &lt;Block&gt;<br>
+          <br>
+           def bigger(a,b):<br>
+          <div class="tab">if a > b<br>
+              z = a<br>
+          else:<br>
+              z = b<br>
+          return z<br></div>
+       </p>
+      </div>
+    </div>
+   <div class="concept" id="lesson-7-2">
+    <div class="concept-title">
+      OR
+      </div>
+      <div class="concept-description">
+       <p> &lt;Expression&gt; or &lt;Expression&gt;<br>
+          If first expression is true then second doesnt matter
+      </p>
+      </div>
+    </div>
+   <div class="concept" id="lesson-7-3">
+    <div class="concept-title">
+      While Loops
+      </div>
+      <div class="concept-description">
+       <p> while &lt;Test Expression&gt;<br>
+          &lt;Block&gt;
+          <br>
+          i = 0 <br>
+          while i  &lt; 10: <br>
+          <div class="tab">print i<br>
+          i = i + 1<br></div>
+       </p>
+      </div>
+    </div>
+ </div>
+ <div class="lesson">
+      <h2 id="lesson-8">Lesson 8: Debugging</h2>
+  <div class="concept" id="lesson 8-1">
+      <div class="concept-title">
+      Debugging
+      </div>
+      <div class="concept-description">
+       <p>Debugging gets better with practice. To find bugs use print statements to see your variables are giving the correct values. Use comments to comment out code you no longer need or are not testing. Always keep versions of your code cause you may have to come back to it, and if we delete it we may run into probelms. 
+      </p>
+      </div>
+    </div>
+  </div>
+  <div class="lesson">
+      <h2 id="lesson-9">Lesson 9: Structured Data: Lists & For Loops</h2>
+  <div class="concept" id="lesson-9-1">
+      <div class="concept-title">
+      Lists
+      </div>
+      <div class="concept-description">
+       <p><b>Lists</b><br>
+        &lt;list&gt; -> [&lt;expression&gt;, &lt;expression&gt;, ...]<br>
+        <br>
+        <b>Nested Lists</b>
+       nested list = ['bears','candy', 'oranges', 3, [1, 2, ['Sam', 'Sammy']]]<br>
+       To get Sam we do nested list[4][2][0]
+      </p>
+      </div>
+    </div>
+  <div class="concept" id="lesson-9-2">
+      <div class="concept-title">
+      List Operations
+      </div>
+      <div class="concept-description">
+       <p><b>Append</b>Adds a new element to the end of the list<br>
+        &lt;list&gt;.append(&lt;element&gt;)<br>
+        days.append('Saturday')<br>
+        <br>
+        <b>+ :plus</b>
+         <br> adds to the new list the list being added to the orginal<br>
+        &lt;list&gt; + &lt;list&gtl; <br>
+        [0,1]+ [2] == [0,1,2]
+        <br>
+        <b>len</b>
+         <br>Checked the length of the list<br>
+        len(&lt;list&gt;)<br>
+        len('Gurjot')  == 6<br>
+        <br>
+        <b>Index</b>
+         <br>You pass in a value and it gives u the first position of the values location and if it doesnt exit it gives you -1<br>
+        &lt;list&gt;.index(&lt;value&gt;)<br>
+        <br>
+        <b>In ..... Not In</b>
+         <br>Returns a true and False (Boolean) for helping to deal with the error of not getting -1 but in stead returning a boolean<br>
+        &lt;value&gt; in &lt;list&gt;<br>
+        &lt;value&gt; not in &lt;list&gt;<br>
+      </p>
+      </div>
+    </div>  
+ <div class="concept" id="lesson-9-3">
+      <div class="concept-title">
+      Loops for lists 
+      </div>
+      <div class="concept-description">
+       <p>How we can loop through a list <br>
+        <br>
+        def print_list(p):<br>
+        <div class="tab">i=0</div>
+        <div class="tab">while i&lt;len(p):<br>
+        print p[i]<br>
+        i=i++1</div>
+      </p>
+      </div>
+    </div>
+<div class="concept" id="lesson-9-4">
+      <div class="concept-title">
+      For Loops
+      </div>
+      <div class="concept-description">
+      <p> For loops are a little less complicated than while lops and its a easier way to read through a list of elements<br>
+        for &lt;name&gt; in &lt;list&gt;:
+        <br>
+        &lt;Block&gt;<br>
+        <br>
+        (refering to previous concept)<br>
+        def print_elements(p):<br>
+        <div class="tab">for e in p:<br>
+        print e<br></div>
+      </p>
+      </div>
+    </div>      
+  </div>
+  <div class="lesson">
+      <h2 id="lesson-10">Lesson 10: How to Solve Problems</h2>
+  <div class="concept" id="lesson-10-1">
+      <div class="concept-title">
+      Lists: Define nextDay
+      </div>
+      <div class="concept-description">
+       <p>
+          <b>Define a procedure nextDay(year, month, day) that takes a input of a year month and day and returns the next to with the exception that all months only have 30 days.</b> <br>
+          <br>
+          <b>Code:</b><br>
+          def nextDay(year, month, day):  <br>
+          if day &lt; 30: <br>
+          return year, month, day + 1 <br>
+          else: <br>
+          if month == 12: <br>
+          return year + 1, 1, 1 <br>
+          else: <br>
+          return year, month + 1, 1 <br>
+      </p>
+      </div>
+    </div>
+  <div class="concept" id="lesson-10-2">
+      <div class="concept-title">
+      Lists: Def daysBetweenDates (Helper Procedure)
+      </div>
+      <div class="concept-description">
+       <p>
+         <b>Define a procedure daysBetweenDates that will produce the correct number of days between those two dtes that are passed in from ateIsBefore(year1, month1, day1, year2, month2, day2)</b> <br>
+          THIS IS A HELPER PROCEDURE TO ALLOW USE TO KNOW THAT DATE1 IS BEFORE DATE2<br>
+          <br>
+          <b>Code:</b><br>
+          def dateIsBefore(year1, month1, day1, year2, month2, day2): <br>
+          if year1 &lt; year2:<br><br>
+          return True<br><br>
+          if year1 == year2:<br>
+          if month1 &lt; month2:<br>
+          return True<br><br>
+          if month1 == month2:<br>
+          return day1 &lt; day2<br>
+          return False<br>
+      </p>
+      </div>
+    </div>  
+  <div class="concept" id="lesson-10-3">
+      <div class="concept-title">
+      Lists
+      </div>
+      <div class="concept-description">
+       <p>
+          <b>Define a procedure daysBetweenDates that will produce the correct number of days between those two dtes that are passed in from ateIsBefore(year1, month1, day1, year2, month2, day2) <br></b>
+          <br>
+          <b>Code:</b><br>
+          def daysBetweenDates(year1, month1, day1, year2, month2, day2): <br>
+          """Returns the number of days between year1/month1/day1 and year2/month2/day2. Assumes inputs are valid dates in Gregorian calendar."""<br>
+          assert not dateIsBefore(year2, month2, day2, year1, month1, day1)<br>
+          days = 0<br><br>
+          while dateIsBefore(year1, month1, day1, year2, month2, day2):<br>
+          year1, month1, day1 = nextDay(year1, month1, day1)<br>
+          days += 1<br>
+          return days<br>
+       </p>
+      </div>
+    </div> 
+  <div class="concept" id="lesson-10-4">
+      <div class="concept-title">
+      Lists: Leap Year plus Finished
+      </div>
+      <div class="concept-description">
+       <p>
+
+          <b>Code:</b><br>
+          def isLeapYear(year): <br>
+          #From Wikipedia: if (year is not exactly divisible by 4) then (it is a common year) <br>
+          #else <br>
+          #if (year is not exactly divisible by 100) then (it is a leap year) <br>
+          #else <br>
+          #if (year is not exactly divisible by 400) then (it is a common year) <br>
+          #else (it is a leap year) <br>
+          if year % 400 == 0:<br>
+          return True<br>
+          if year % 100 == 0:<br>
+          return False<br>
+          f year % 4 == 0:<br>
+          return True<br>
+          return False<br><br>
+
+          def daysInMonth(year,month): <br>
+          if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:<br>
+          return 31<br>
+          else:<br>
+          if month == 2:<br>
+          if isLeapYear(year):<br>
+          return 29<br>
+          else:<br>
+          return 28<br>
+          else:<br>
+          return 30<br><br>
+
+          def nextDay(year, month, day): <br>
+          if day &lt; daysInMonth(year, month):<br>
+          return year, month, day + 1<br>
+          if month == 12:<br>
+          return year + 1, 1, 1<br>
+          else:<br>
+          return year, month + 1, 1<br><br>
+
+          def dateIsBefore(year1, month1, day1, year2, month2, day2): <br>
+          """Returns True if year1-month1-day1 is before year2-month2-day2. Otherwise, returns False."""<br>
+          if year1 &lt; year2:<br>
+          return True<br>
+          if year1 == year2:<br>
+          if month1 &lt; month2:<br>
+          return True<br>
+          if month1 == month2:<br>
+          return day1 &lt; day2<br>
+          return False<br><br>
+
+          def daysBetweenDates(year1, month1, day1, year2, month2, day2): <br>
+          """Returns the number of days between year1/month1/day1<br>
+          and year2/month2/day2. Assumes inputs are valid dates<br>
+          in Gregorian calendar."""<br>
+          # program defensively! Add an assertion if the input is not valid!<br>
+          assert not dateIsBefore(year2, month2, day2, year1, month1, day1)<br>
+          days = 0<br>
+          while dateIsBefore(year1, month1, day1, year2, month2, day2):<br>
+          year1, month1, day1 = nextDay(year1, month1, day1)<br>
+          days += 1<br>
+          return days<br><br>
+
+          def test(): <br>
+          test_cases = [((2012,1,1,2012,2,28), 58),<br>
+          ((2012,1,1,2012,3,1), 60),<br>
+          ((2011,6,30,2012,6,30), 366),<br>
+          ((2011,1,1,2012,8,8), 585 ),<br>
+          ((1900,1,1,1999,12,31), 36523)]<br><br>
+
+          for (args, answer) in test_cases:<br>
+          result = daysBetweenDates(*args)<br>
+          if result != answer:<br>
+          print "Test with data:", args, "failed"<br>
+          else:<br>
+          print "Test case passed!"<br><br>
+
+          test()<br>
+      </p>
+      </div>
+    </div>   
+  </div> 
+  <div class="lesson">
+      <h2 id="lesson-11">Lesson 11: Python generating</h2> 
+  <div class="concept" id="lesson-11-1">
+      <div class="concept-title">
+      Python Code into HTML
+      </div>
+      <div class="concept-description">
+       <p>
+       def generate_concept_HTML(concept_title, concept_description):<br>
+    html_text_1 = '''<br>
+      &lt;div class="concept"&gt;<br>
+          &lt;div class="concept-title"&gt;<br>
+              ''' + concept_title
+          html_text_2 = '''<br>
+          &lt;/div&gt;<br>
+          <div class="concept-description"&gt;<br>
+              ''' + concept_description<br>
+          html_text_3 = '''<br>
+          &lt;/div&gt;<br>
+      &lt;/div>'''&gt;<br>
+          full_html_text = html_text_1 + html_text_2 + html_text_3<br>
+          return full_html_text<br><br>
+
+      def make_HTML(concept):<br>
+          concept_title = concept[0]<br>
+          concept_description = concept[1]<br>
+          return generate_concept_HTML(concept_title, concept_description)<br><br>
+
+      EXAMPLE_LIST_OF_CONCEPTS = [ ['Python', 'Python is a Programming Language'],<br>
+                                   ['For Loop', 'For Loops allow you to iterate over lists'],<br>
+                                   ['Lists', 'Lists are sequences of data'] ]<br><br>
+
+
+      def make_HTML_for_many_concepts(list_of_concepts):<br>
+          HTML = ""<br>
+          for concept in list_of_concepts:<br>
+              concept_HTML = make_HTML(concept)<br>
+              HTML = HTML + concept_HTML<br>
+          return HTML<br><br>
+
+      print make_HTML_for_many_concepts(EXAMPLE_LIST_OF_CONCEPTS)<br>
+      </p>
+      </div>
+    </div> 
+  </div>
+</div>
+</body>
+{% endblock %}

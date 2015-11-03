@@ -1,0 +1,54 @@
+{% extends "main_page.html" %}
+{% block content %}
+
+{% for page in pages %}
+	<br>
+	<br>
+	<h1 style = "color:red">
+		{{page["name"]}} posted :
+	</h1>
+	<hr>
+	{% for key, value in page["content"].items() %}
+	<div>
+		<h2>
+			{{key}}
+		</h2>
+		<p>
+			{{value}}
+		</p>
+	</div>
+	{% endfor %}
+	<hr>
+	<div class="info">
+		<div>
+			{{page["name"]}} 
+		</div>
+		<div>
+			{{page["date"]}}
+		</div>
+	</div>
+	<br>
+	<br>
+{% endfor %}
+	<div class="center">
+		<form method="get" action="/">
+			<input type="submit" value="Return to Form Page" id = "submit">
+		</form>
+	</div>
+{% endblock content %}
+{% block footer %}
+	<div class="info">
+		stage 4
+	</div>
+	<div class="info">
+		<form action="/example">
+			<label>
+				Gurjot Comment
+				
+			</label>
+		</form>
+	</div>
+	<div class="info">
+		October 2015
+	</div>
+{% endblock footer %}

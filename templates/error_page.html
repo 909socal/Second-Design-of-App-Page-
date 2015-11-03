@@ -1,0 +1,25 @@
+{% extends 'main_page.html' %}
+
+{% block content %}
+<h1>
+Their is a error, within your Submission:  
+</h1>
+<div class="center">
+<p>
+	We could not process your entry, due to it not being a valid comment or name.
+</p>
+<p>
+	Please , remove any special characters or blanks within your entry and try again. 
+	<br>
+	To go Back, click on the "back button" or "Reset button below" to return to the previous page. 
+</p>
+
+<form method="get" action="/">
+	<label>
+		
+		<input type="submit" value="Reset"  id = "submit"">
+	</label>
+</form>
+</div>
+<br>
+{% endblock content %}

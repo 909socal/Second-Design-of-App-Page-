@@ -1,0 +1,87 @@
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    font-family: Helvetica;
+}
+
+
+.lesson {
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+}
+
+ 
+h1 {
+    text-align: center;
+}
+
+.concept {
+    background-color: red;
+    padding: 4px;
+    margin: 10px;
+    border-radius: 4px;
+    color: black;
+}
+
+.concept-title {
+    font-size: 20px;
+    margin: 8px;
+    text-align: center;
+    color: white;
+}
+
+.concept-description {
+    font-weight: lighter;
+    margin: 6px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center{
+    color: red;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px auto; 
+}
+
+.error {
+    color: black;
+}
+#submit {
+ background-color: black;
+ color:red;
+ font-size: 15px;
+ width: 140px;
+ height: 45px;
+ border-radius: 10px;
+ margin: 0;
+ padding: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: red;
+}
+.tab {
+  margin-left: 20px;
+}
+
+.tab-2 {
+  margin-left: 40px;
+}
+
+.tab-3 {
+  margin-left: 60px;
+
